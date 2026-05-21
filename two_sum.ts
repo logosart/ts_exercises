@@ -24,21 +24,11 @@ function it(array: number[], target: number){
         for(let n2=n1+1; n2<array.length;n2++){
 
             if(array[n1]+array[n2]==target){
-                console.log(array[n1], array[n2])
+                return [n1,n2]
             }
         }
     }
 }
 
 
-
-// let count = 0 
-// for (let i =0; i< a.length; i++){
-//     for(let j=i+1; j<a.length; j++){
-//         if(i=j){
-//             count+=1
-//         }
-//     }
-// }
-
-it(array,9)
+console.log(it(array,9))
