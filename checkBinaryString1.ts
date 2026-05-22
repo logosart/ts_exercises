@@ -1,15 +1,17 @@
 function checkOnesSegment(s: string): boolean {
-    let is : boolean = false
     const l = s.split("").map(Number)
-    let count = 0 
-    const index : number[] = []
     const indices: number[] = []
     let i = 0 
+    
     for (let i = 0; i<s.length;i++)
-        if(l[i]===1){
+        if(l[i]==1){
             indices.push(i)
 
         }
+    
+    console.log(indices)
+    console.log(indices.length)
+    console.log(indices.length-1)
 
     for(let i =0; i<indices.length-1;i++){
         
@@ -19,7 +21,7 @@ function checkOnesSegment(s: string): boolean {
     }
     return true
 };
-const s = "110011"
+const s = "10"
 // "1"     true
 // "10"    true
 // "11"    true
